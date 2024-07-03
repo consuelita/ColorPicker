@@ -8,29 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State var selectedRating: Double = 3
-    
+    @State private var redValue = 0.0
+    @State private var greenValue = 0.0
+    @State private var blueValue = 0.0
+    @State private var activeColor = Color.gray
+        
     var body: some View {
         VStack {
-            Image("SeqoiaPark")
-                .resizable()
-                .frame(width: 200, height: 250)
-            Text("Select Park Rating")
-                .font(.largeTitle)
-                .padding()
-                .background(.green)
-            Text(selectedRating, format: .number.precision(.fractionLength(0)))
-                .bold()
-                .font(.title)
-                .foregroundStyle(.orange)
-            Slider(value: $selectedRating, in: 0...5)
-                .tint(.green)
-                .padding()
+            RoundedRectangle(cornerRadius: 24.0)
+                .frame(width: 300, height: 250)
+                .foregroundStyle(activeColor)
+                .padding(.bottom, 24)
             
-            Button("Next") {
-                
+            Text("red")
+            HStack {
+                Slider(value: $redValue, in: 0...255)
+                    .tint(.red)
+                Text(redValue, format: .number.precision(.fractionLength(1)))
             }
+            
+            Text("green")
+            HStack {
+                Slider(value: $greenValue, in: 0...255)
+                    .tint(.green)
+                Text(greenValue, format: .number.precision(.fractionLength(1)))
+            }
+            
+            Text("blue")
+            HStack {
+                Slider(value: $blueValue, in: 0...255)
+                    .tint(.blue)
+                Text(blueValue, format: .number.precision(.fractionLength(1)))
+            }
+            
+            Button("Set Color") {
+                activeColor = Color(red:redValue / 255.0, green: greenValue / 255.0, blue: blueValue / 255.0)
+            }
+            .buttonStyle(.borderedProminent)
+            .padding(16)
+            
         }
         .padding()
     }
