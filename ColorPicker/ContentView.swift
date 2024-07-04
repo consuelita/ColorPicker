@@ -12,12 +12,12 @@ struct ContentView: View {
     @State private var greenValue = 0.0
     @State private var blueValue = 0.0
     @State private var activeColor = Color.gray
-        
+    
     var body: some View {
         VStack {
             RoundedRectangle(cornerRadius: 24.0)
                 .frame(width: 300, height: 250)
-                .foregroundStyle(activeColor)
+                .foregroundStyle(Color(red:redValue / 255.0, green: greenValue / 255.0, blue: blueValue / 255.0))
                 .padding(.bottom, 24)
             
             Text("red")
