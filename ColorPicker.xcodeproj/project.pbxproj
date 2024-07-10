@@ -11,6 +11,9 @@
 		AEBF816A2C35ABAF000D1305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF81692C35ABAF000D1305 /* ContentView.swift */; };
 		AEBF816C2C35ABB0000D1305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBF816B2C35ABB0000D1305 /* Assets.xcassets */; };
 		AEBF816F2C35ABB0000D1305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBF816E2C35ABB0000D1305 /* Preview Assets.xcassets */; };
+		AECAF6692C3F1DD700CD975E /* RGBSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECAF6682C3F1DD700CD975E /* RGBSlider.swift */; };
+		AECAF66B2C3F1EA600CD975E /* RGBSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECAF66A2C3F1EA600CD975E /* RGBSliderView.swift */; };
+		AECAF66D2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECAF66C2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		AEBF81692C35ABAF000D1305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AEBF816B2C35ABB0000D1305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEBF816E2C35ABB0000D1305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AECAF6682C3F1DD700CD975E /* RGBSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSlider.swift; sourceTree = "<group>"; };
+		AECAF66A2C3F1EA600CD975E /* RGBSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSliderView.swift; sourceTree = "<group>"; };
+		AECAF66C2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonBackgroundViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		AEBF81662C35ABAF000D1305 /* ColorPicker */ = {
 			isa = PBXGroup;
 			children = (
+				AECAF6682C3F1DD700CD975E /* RGBSlider.swift */,
+				AECAF66A2C3F1EA600CD975E /* RGBSliderView.swift */,
 				AEBF81672C35ABAF000D1305 /* ColorPickerApp.swift */,
 				AEBF81692C35ABAF000D1305 /* ContentView.swift */,
+				AECAF66C2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift */,
 				AEBF816B2C35ABB0000D1305 /* Assets.xcassets */,
 				AEBF816D2C35ABB0000D1305 /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECAF6692C3F1DD700CD975E /* RGBSlider.swift in Sources */,
 				AEBF816A2C35ABAF000D1305 /* ContentView.swift in Sources */,
 				AEBF81682C35ABAF000D1305 /* ColorPickerApp.swift in Sources */,
+				AECAF66B2C3F1EA600CD975E /* RGBSliderView.swift in Sources */,
+				AECAF66D2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
