@@ -12,33 +12,49 @@ struct ContentView: View
     @State private var redValue = 0.0
     @State private var greenValue = 0.0
     @State private var blueValue = 0.0
-    @State private var activeColor = Color.gray
+    @State private var activeColor = Color.white
+    
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    
+    var landscapeIsCompact: Bool
+    {
+        horizontalSizeClass == .compact && verticalSizeClass == .compact ||
+        horizontalSizeClass == .regular && verticalSizeClass == .compact
+    }
     
     var body: some View 
     {
         let _ = Self._printChanges()
         let _ = print("red value = \(redValue)")
-        VStack
+        
+        Group
         {
-            RoundedRectangle(cornerRadius: 24.0)
-                .frame(width: 300, height: 250)
-                .foregroundStyle(Color(red:redValue / 255.0, green: greenValue / 255.0, blue: blueValue / 255.0))
-                .padding(.bottom, 24)
-            
-            RGBSliderView(rgbSlider: .red, value: $redValue)
-            RGBSliderView(rgbSlider: .green, value: $greenValue)
-            RGBSliderView(rgbSlider: .blue, value: $blueValue)
-            
-            Button("Set Color") {
-                activeColor = Color(red:redValue / 255.0, green: greenValue / 255.0, blue: blueValue / 255.0)
+            if landscapeIsCompact 
+            {
+                HStack(spacing: 16)
+                {
+                    ColorCardView(color: activeColor)
+                    RGBSliderStackView(color: $activeColor, red: $redValue, green: $greenValue, blue: $blueValue)
+                }
             }
-            .primaryBackground()
-            
+            else
+            {
+                VStack(spacing: 16)
+                {
+                    ColorCardView(color: activeColor)
+                    RGBSliderStackView(color: $activeColor, red: $redValue, green: $greenValue, blue: $blueValue)
+                }
+            }
         }
         .padding()
     }
 }
 
 #Preview(traits: .sizeThatFitsLayout) {
+    ContentView()
+}
+
+#Preview(traits: .landscapeLeft) {
     ContentView()
 }

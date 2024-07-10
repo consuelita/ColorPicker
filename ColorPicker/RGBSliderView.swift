@@ -16,13 +16,14 @@ struct RGBSliderView: View
     {
         VStack(spacing: 0)
         {
-            Text(rgbSlider.title)
             HStack
             {
-                Slider(value: $value, in: 0...255)
-                    .tint(rgbSlider.tintColor)
+                Text(rgbSlider.title)
                 Text(value, format: .number.precision(.fractionLength(1)))
             }
+            
+            Slider(value: $value, in: 0...255)
+                .tint(rgbSlider.tintColor)
         }
     }
 }

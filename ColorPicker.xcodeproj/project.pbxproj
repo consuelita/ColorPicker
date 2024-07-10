@@ -14,6 +14,8 @@
 		AECAF6692C3F1DD700CD975E /* RGBSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECAF6682C3F1DD700CD975E /* RGBSlider.swift */; };
 		AECAF66B2C3F1EA600CD975E /* RGBSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECAF66A2C3F1EA600CD975E /* RGBSliderView.swift */; };
 		AECAF66D2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECAF66C2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift */; };
+		AECAF66F2C3F358C00CD975E /* ColorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECAF66E2C3F358C00CD975E /* ColorCardView.swift */; };
+		AECAF6712C3F432C00CD975E /* RGBSliderStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECAF6702C3F432C00CD975E /* RGBSliderStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		AECAF6682C3F1DD700CD975E /* RGBSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSlider.swift; sourceTree = "<group>"; };
 		AECAF66A2C3F1EA600CD975E /* RGBSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSliderView.swift; sourceTree = "<group>"; };
 		AECAF66C2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonBackgroundViewModifier.swift; sourceTree = "<group>"; };
+		AECAF66E2C3F358C00CD975E /* ColorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCardView.swift; sourceTree = "<group>"; };
+		AECAF6702C3F432C00CD975E /* RGBSliderStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSliderStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +61,12 @@
 		AEBF81662C35ABAF000D1305 /* ColorPicker */ = {
 			isa = PBXGroup;
 			children = (
-				AECAF6682C3F1DD700CD975E /* RGBSlider.swift */,
-				AECAF66A2C3F1EA600CD975E /* RGBSliderView.swift */,
 				AEBF81672C35ABAF000D1305 /* ColorPickerApp.swift */,
 				AEBF81692C35ABAF000D1305 /* ContentView.swift */,
+				AECAF6702C3F432C00CD975E /* RGBSliderStackView.swift */,
+				AECAF66E2C3F358C00CD975E /* ColorCardView.swift */,
+				AECAF66A2C3F1EA600CD975E /* RGBSliderView.swift */,
+				AECAF6682C3F1DD700CD975E /* RGBSlider.swift */,
 				AECAF66C2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift */,
 				AEBF816B2C35ABB0000D1305 /* Assets.xcassets */,
 				AEBF816D2C35ABB0000D1305 /* Preview Content */,
@@ -146,10 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECAF6712C3F432C00CD975E /* RGBSliderStackView.swift in Sources */,
 				AECAF6692C3F1DD700CD975E /* RGBSlider.swift in Sources */,
 				AEBF816A2C35ABAF000D1305 /* ContentView.swift in Sources */,
 				AEBF81682C35ABAF000D1305 /* ColorPickerApp.swift in Sources */,
 				AECAF66B2C3F1EA600CD975E /* RGBSliderView.swift in Sources */,
+				AECAF66F2C3F358C00CD975E /* ColorCardView.swift in Sources */,
 				AECAF66D2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
