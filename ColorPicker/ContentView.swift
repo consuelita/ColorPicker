@@ -23,29 +23,18 @@ struct ContentView: View
         horizontalSizeClass == .regular && verticalSizeClass == .compact
     }
     
+    var layout: AnyLayout {
+        landscapeIsCompact ? AnyLayout(HStackLayout(spacing: 16)) : AnyLayout(VStackLayout(spacing: 16))
+    }
+    
     var body: some View 
     {
         let _ = Self._printChanges()
         let _ = print("red value = \(redValue)")
         
-        Group
-        {
-            if landscapeIsCompact 
-            {
-                HStack(spacing: 16)
-                {
-                    ColorCardView(color: activeColor)
-                    RGBSliderStackView(color: $activeColor, red: $redValue, green: $greenValue, blue: $blueValue)
-                }
-            }
-            else
-            {
-                VStack(spacing: 16)
-                {
-                    ColorCardView(color: activeColor)
-                    RGBSliderStackView(color: $activeColor, red: $redValue, green: $greenValue, blue: $blueValue)
-                }
-            }
+        layout {
+            ColorCardView(color: activeColor)
+            RGBSliderStackView(color: $activeColor, red: $redValue, green: $greenValue, blue: $blueValue)
         }
         .padding()
     }

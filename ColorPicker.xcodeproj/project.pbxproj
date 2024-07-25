@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE528D612C51CF1400285C8D /* PortraitColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE528D602C51CF1400285C8D /* PortraitColorPicker.swift */; };
+		AE528D632C51D27600285C8D /* LandscapeColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE528D622C51D27600285C8D /* LandscapeColorPicker.swift */; };
 		AEBF81682C35ABAF000D1305 /* ColorPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF81672C35ABAF000D1305 /* ColorPickerApp.swift */; };
 		AEBF816A2C35ABAF000D1305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF81692C35ABAF000D1305 /* ContentView.swift */; };
 		AEBF816C2C35ABB0000D1305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBF816B2C35ABB0000D1305 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE528D602C51CF1400285C8D /* PortraitColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitColorPicker.swift; sourceTree = "<group>"; };
+		AE528D622C51D27600285C8D /* LandscapeColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeColorPicker.swift; sourceTree = "<group>"; };
 		AEBF81642C35ABAF000D1305 /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBF81672C35ABAF000D1305 /* ColorPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerApp.swift; sourceTree = "<group>"; };
 		AEBF81692C35ABAF000D1305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			children = (
 				AEBF81672C35ABAF000D1305 /* ColorPickerApp.swift */,
 				AEBF81692C35ABAF000D1305 /* ContentView.swift */,
+				AE528D602C51CF1400285C8D /* PortraitColorPicker.swift */,
+				AE528D622C51D27600285C8D /* LandscapeColorPicker.swift */,
 				AECAF6702C3F432C00CD975E /* RGBSliderStackView.swift */,
 				AECAF66E2C3F358C00CD975E /* ColorCardView.swift */,
 				AECAF66A2C3F1EA600CD975E /* RGBSliderView.swift */,
@@ -158,7 +164,9 @@
 				AEBF81682C35ABAF000D1305 /* ColorPickerApp.swift in Sources */,
 				AECAF66B2C3F1EA600CD975E /* RGBSliderView.swift in Sources */,
 				AECAF66F2C3F358C00CD975E /* ColorCardView.swift in Sources */,
+				AE528D612C51CF1400285C8D /* PortraitColorPicker.swift in Sources */,
 				AECAF66D2C3F2C6000CD975E /* PrimaryButtonBackgroundViewModifier.swift in Sources */,
+				AE528D632C51D27600285C8D /* LandscapeColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
